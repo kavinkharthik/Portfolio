@@ -906,6 +906,135 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Welcome Modal Styles */
+.welcome-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.welcome-modal-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.welcome-modal {
+  background: rgba(10, 15, 30, 0.95);
+  /* Slightly blueish dark bg */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+  /* Cyan glow */
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  /* Cyan border */
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.welcome-modal-overlay.visible .welcome-modal {
+  transform: scale(1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.welcome-symbol {
+  font-size: 56px;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 230, 0, 0.5));
+  /* Glowing effect */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ff80bf 0%, #d65db1 100%);
+  /* Pink gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  /* Ensuring clean sans-serif */
+}
+
+.explore-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ffe600;
+  /* Yellow/Gold border */
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: 0 0 5px rgba(255, 230, 0, 0.1);
+  font-family: monospace;
+  /* Monospace for button text to match image vibe if desired, or keep sans */
+}
+
+.explore-btn:hover {
+  background: rgba(255, 230, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 230, 0, 0.4);
+  transform: translateY(-2px);
+}
+
 .card {
   background: var(--bg-card);
   backdrop-filter: blur(12px);

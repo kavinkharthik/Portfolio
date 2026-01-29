@@ -36,7 +36,7 @@ export const fallbackProfile = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
     backend: ['Node.js', 'Express'],
     database: ['MySQL', 'MongoDB'],
-    tools: ['GitHub', 'JIRA']
+    tools: ['GIT', 'GitHub', 'JIRA', 'Canva']
   },
   areasOfInterest: ['Database Management System', 'Web Development'],
   projects: [

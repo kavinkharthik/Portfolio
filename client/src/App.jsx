@@ -9,6 +9,7 @@ import TypingText from './components/TypingText'
 import ParticleBackground from './components/ParticleBackground'
 import ScrollReveal from './components/ScrollReveal'
 import SkillBar from './components/SkillBar'
+import WelcomeModal from './components/WelcomeModal'
 import './style.css'
 
 
@@ -18,6 +19,7 @@ function App() {
   const skills = profile.skills || {}
   const [scrollProgress, setScrollProgress] = useState(0)
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const [showWelcomeModal, setShowWelcomeModal] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,6 +134,9 @@ function App() {
 
   return (
     <div className="page">
+      {showWelcomeModal && (
+        <WelcomeModal onClose={() => setShowWelcomeModal(false)} />
+      )}
       <div className="scroll-progress">
         <div
           className="scroll-progress-bar"
