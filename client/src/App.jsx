@@ -161,6 +161,7 @@ function App() {
             <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a>
             <a href="#education" onClick={(e) => handleNavClick(e, 'education')}>Education</a>
             <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
+            <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </nav>
         </header>
 
@@ -179,7 +180,7 @@ function App() {
               <p className="lede">{profile.careerObjective}</p>
             )}
             <div className="hero__actions" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem' }}>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="project-link" style={{ fontSize: '1.1rem', padding: '0.8rem 2rem' }}>
+              <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" className="project-link" style={{ fontSize: '1.1rem', padding: '0.8rem 2rem' }}>
                 <span className="project-link__icon">📄</span>
                 View Resume
               </a>
