@@ -16,7 +16,7 @@ export const fallbackProfile = {
       institution: 'Kongu Engineering College, Perundurai',
       years: '2023-2027',
       scoreLabel: 'CGPA',
-      score: '7.49'
+      score: '7.51'
     },
     {
       level: 'HSC',
