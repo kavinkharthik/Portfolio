@@ -53,12 +53,6 @@ function App() {
     }
   ].filter(link => link.href)
 
-  const stats = [
-    { label: 'Projects', value: '4' },
-    { label: 'Certifications', value: '5' },
-    { label: 'Hackathons', value: '3' },
-    { label: 'Paper Presentation', value: '5' }
-  ]
 
   const skillIcons = {
     languages: (
@@ -186,15 +180,10 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="hero__stats">
-            {stats.map((stat) => (
-              <StatCard key={stat.label} label={stat.label} value={stat.value} />
-            ))}
-          </div>
         </header>
 
         <main>
-          <ScrollReveal animation="fade-up" delay={200}>
+          <ScrollReveal animation="fade-up" delay={0}>
             <Section title="About" id="about">
               <div className="about">
                 <div className="about-card interests">
@@ -225,7 +214,7 @@ function App() {
             </Section>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-up" delay={300}>
+          <ScrollReveal animation="fade-up" delay={0}>
             <Section title="Projects" id="projects">
               <div className="grid">
                 {(profile.projects || []).map((project, index) => (
@@ -285,7 +274,7 @@ function App() {
             </div>
           </Section>
 
-          <ScrollReveal animation="fade-up" delay={500}>
+          <ScrollReveal animation="fade-up" delay={0}>
             <Section title="Education" id="education">
               <div className="timeline">
                 {education.map((item) => (
@@ -309,7 +298,7 @@ function App() {
             </Section>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-up" delay={600}>
+          <ScrollReveal animation="fade-up" delay={0}>
             <Section title="Certifications & Achievements" id="certifications">
               <div className="grid two">
                 <div className="card">
@@ -332,7 +321,7 @@ function App() {
             </Section>
           </ScrollReveal>
 
-          <ScrollReveal animation="fade-up" delay={700}>
+          <ScrollReveal animation="fade-up" delay={0}>
             <Section title="Contact" id="contact">
               <div className="contact-grid">
                 {profile.contact?.email && (
