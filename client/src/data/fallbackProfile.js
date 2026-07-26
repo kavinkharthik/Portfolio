@@ -32,13 +32,13 @@ export const fallbackProfile = {
     }
   ],
   skills: {
-    languages: ['C', 'Java', 'Python'],
+    languages: ['C', 'Python'],
     frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'],
     backend: ['Node.js', 'Express'],
     database: ['MySQL', 'MongoDB'],
     tools: ['GIT', 'GitHub', 'JIRA', 'Canva']
   },
-  areasOfInterest: ['Database Management System', 'Web Development'],
+  areasOfInterest: ['Machine Learning', 'Web Development'],
   projects: [
     {
       name: 'ATM Security using AI',
