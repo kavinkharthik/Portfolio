@@ -42,12 +42,12 @@
     {
       "name": "ATM Security using AI",
       "description": "Implemented an AI-powered ATM security system to detect suspicious activities and prevent fraud.",
-      "github": "https://github.com/kavinkharthik/Book-Library"
+      "github": "https://github.com/kavinkharthik/ATM-Security-Using-AI"
     },
     {
       "name": "Book Library (MERN Stack)",
       "description": "Built a web app to manage books, users, and borrow/return records using MongoDB, Express, React, and Node.js.",
-      "github": "https://github.com/kavinkharthik/ATM-Security-Using-AI"
+      "github": "https://github.com/kavinkharthik/Book-Library"
     },
     {
       "name": "Vivo Showroom Order Management",
